@@ -9,7 +9,13 @@ class PracticeController extends Controller
 {
     public function index()
     {
+        // bladeに渡すデータを以下に記載
+        $data =array();
+        $data['name'] = 'Kasumi';
+        $data['message'] = 'Hey';
         // practice.blade.phpを返している
-        return view('practice');
+        return view('practice')->with(
+            'data', $data
+        );
     }
 }

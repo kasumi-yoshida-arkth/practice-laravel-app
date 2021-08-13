@@ -17,4 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// practiceのパスへPracticeControllerのindexへ
 Route::get('/practice', 'App\Http\Controllers\PracticeController@index');
